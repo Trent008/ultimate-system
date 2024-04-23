@@ -15,3 +15,6 @@ git clone https://git.suckless.org/dmenu
 git clone https://github.com/Trent008/dwm
 # compiles dwm and dmenu, creates .xinitrc, and applies themes
 ./ultimate-system/update.sh
+# setup with my git username and email
+git config --global user.email "trenthekman68@gmail.com"
+git config --global user.name "Trent008"
