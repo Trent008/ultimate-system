@@ -1,7 +1,7 @@
 # install all my packages
 sudo pacman -Syu
 sudo pacman -S libxinerama libx11 libxft xorg-server xorg-xinit xorg-xsetroot xorg-xrandr
-sudo pacman -S code terminator pcmanfm feh spotify-launcher playerctl firefox dunst
+sudo pacman -S code terminator thunar feh spotify-launcher playerctl firefox dunst
 sudo pacman -S adapta-gtk-theme ttf-nerd-fonts-symbols-mono shotgun brightnessctl picom
 cd yay
 makepkg -si
