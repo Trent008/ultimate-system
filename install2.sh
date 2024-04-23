@@ -1,8 +1,7 @@
 ln -sf /usr/share/zoneinfo/US/Central /etc/localtime
 hwclock --systohc
-nano /etc/locale.gen
 locale-gen
-echo "LANG=en_US.UTF-8" > /etc/locale.conf
+echo "LANG=en_US.UTF-8" > /mnt/etc/locale.conf
 export LANG=en_US.UTF-8
 echo archlinux > /etc/hostname
 passwd
