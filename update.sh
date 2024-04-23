@@ -1,7 +1,7 @@
 # recompiles dmenu and dwm
-cd dmenu
+cd ~/dmenu
 sudo make clean install
-cd dwm
+cd ~/dwm
 sudo make clean install
 
 # create .xinitrc to start dwm and display batery and date
