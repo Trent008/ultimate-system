@@ -10,6 +10,7 @@ yay -S xcursor-breeze
 # start bluetooth and wifi
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now NetworkManager.service
+cd ~
 # clone and install dmenu and dwm
 git clone https://git.suckless.org/dmenu
 git clone https://github.com/Trent008/dwm
