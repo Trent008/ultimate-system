@@ -1,6 +1,4 @@
-# recompiles dmenu and dwm
-cd ~/dmenu
-sudo make clean install
+# recompiles dwm
 cd ~/dwm
 sudo make clean install
 
