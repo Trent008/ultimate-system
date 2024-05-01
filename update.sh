@@ -9,7 +9,8 @@ sudo cp ultimate-system/.xinitrc ~
 # setup system theming
 sudo cp ultimate-system/settings.ini /etc/gtk-3.0
 mkdir .config/gtk-3.0
-mkdir .icons .icons/default
+mkdir .icons .icons/default .config/rofi
+cp ultimate-system/config.rasi .config/rofi
 cp ultimate-system/settings.ini .config/gtk-3.0
 cp ultimate-system/index.theme .icons/default
 cp ultimate-system/.Xresources ~

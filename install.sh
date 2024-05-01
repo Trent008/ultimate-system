@@ -3,6 +3,7 @@ sudo pacman -Syu
 sudo pacman -S libxinerama libx11 libxft xorg-server xorg-xinit xorg-xsetroot xorg-xrandr rofi
 sudo pacman -S code terminator thunar feh spotify-launcher playerctl firefox dunst blueberry xarchiver unzip
 sudo pacman -S adapta-gtk-theme papirus-icon-theme ttf-nerd-fonts-symbols-mono shotgun brightnessctl picom
+cd ~
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
