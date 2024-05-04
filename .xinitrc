@@ -3,7 +3,9 @@ xrdb .Xresources
 cd ~
 # display date and time
 while true; do
-        xsetroot -name "Battery: $(cat /sys/class/power_supply/BAT0/capacity)%    $( date +"%a %b %d   %I:%M %P" )"
+        xsetroot -name "Volume: $(awk -F"[/]" '/front-left:/ { print $2 }' <(pactl get-sink-volume @DEFAULT_SINK@))\
+          Battery: $(cat /sys/class/power_supply/BAT0/capacity)%\
+            $( date +"%a %b %d   %I:%M %P" )"
         sleep 2
 done &
 
