@@ -14,6 +14,7 @@ libxft \
 libxinerama \
 nano \
 neofetch \
+obs-studio \
 papirus-icon-theme \
 picom \
 playerctl \
@@ -24,6 +25,7 @@ terminator \
 thunar \
 ttf-nerd-fonts-symbols-mono \
 unzip \
+vlc \
 xarchiver \
 xorg-server \
 xorg-xinit \
