@@ -13,9 +13,12 @@ htop \
 libxft \
 libxinerama \
 nano \
+neofetch \
+obs-studio \
 papirus-icon-theme \
 picom \
 playerctl \
+qemu-desktop \
 rofi \
 shotgun \
 spotify-launcher \
@@ -23,6 +26,7 @@ terminator \
 thunar \
 ttf-nerd-fonts-symbols-mono \
 unzip \
+vlc \
 xarchiver \
 xorg-server \
 xorg-xinit \
