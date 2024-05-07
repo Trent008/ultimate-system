@@ -33,11 +33,14 @@ xorg-server \
 xorg-xinit \
 xorg-xrandr \
 xorg-xsetroot
-# clone xcursor-breeze and dwm
+# clone xcursor-breeze, usbimager, and dwm
 cd ~
 git clone https://aur.archlinux.org/xcursor-breeze.git
+git clone https://aur.archlinux.org/usbimager.git
 git clone https://github.com/Trent008/dwm
 cd xcursor-breeze
+makepkg -si
+cd ~/usbimager
 makepkg -si
 # start bluetooth and wifi
 sudo systemctl enable --now bluetooth.service
