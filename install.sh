@@ -18,7 +18,6 @@ obs-studio \
 papirus-icon-theme \
 picom \
 playerctl \
-qemu-desktop \
 rclone \
 rofi \
 shotgun \
@@ -64,5 +63,3 @@ sudo cp ultimate-system/settings.ini /etc/gtk-3.0
 # setup with my git username and email
 git config --global user.email "trenthekman68@gmail.com"
 git config --global user.name "Trent008"
-# create virtual machine storage
-qemu-img create -f qcow vm.qcow2 64G
