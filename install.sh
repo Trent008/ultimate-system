@@ -52,9 +52,10 @@ sudo make clean install
 cd ~
 cp ultimate-system/.xinitrc ~
 # apply themes
-mkdir .config/gtk-3.0
+mkdir .config/gtk-3.0 .config/terminator
 mkdir .icons .icons/default .config/rofi
 cp ultimate-system/config.rasi .config/rofi
+cp ultimate-system/config .config/terminator
 cp ultimate-system/settings.ini .config/gtk-3.0
 cp ultimate-system/index.theme .icons/default
 cp ultimate-system/.Xresources ~
