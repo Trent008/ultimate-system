@@ -9,7 +9,6 @@ code \
 dunst \
 feh \
 firefox \
-fuse3 \
 htop \
 libxft \
 libxinerama \
