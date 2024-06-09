@@ -45,8 +45,8 @@ static const char *colors[][3]      = {
 	[SchemeIconSel]  = { teal22, NULL, NULL },
 	[SchemeIconUrg]  = { teal18,  NULL, NULL },
 
-	[SchemeLayoutNorm] = { teal20, NULL, NULL },
-	[SchemeLayoutSel]  = { teal22, NULL, NULL },
+	[SchemeLayoutNorm] = { teal10, NULL, NULL },
+	[SchemeLayoutSel]  = { teal10, NULL, NULL },
 
 	[SchemeClientNorm] = { teal20, NULL, border_norm },
 	[SchemeClientSel]  = { teal22, NULL, border_sel },
