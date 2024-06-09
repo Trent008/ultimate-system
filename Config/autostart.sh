@@ -1,4 +1,4 @@
 # add items to autostart here
-./dwm/Config/monitor.sh &
+./ultimate-system/Config/monitor.sh &
 dunst &
 picom
