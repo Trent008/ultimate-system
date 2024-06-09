@@ -110,7 +110,7 @@ static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "terminator", NULL };
 static const char *spotifycmd[]= { "spotify-launcher", NULL };
 static const char *codecmd[]= { "code", NULL };
-static const char *autostart[]= { "./dwm/autostart.sh", NULL };
+static const char *autostart[]= { "./ultimate-system/Config/autostart.sh", NULL };
 static const Arg autostartarg= {.v = autostart };
 
 static const Key keys[] = {
