@@ -31,12 +31,6 @@ dist: clean
 	rm -rf dwm-${VERSION}
 
 install: all
-	mkdir -p ${DESTDIR}${PREFIX}/bin
-	cp -f dwm ${DESTDIR}${PREFIX}/bin
-	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm
-	mkdir -p ${DESTDIR}${MANPREFIX}/man1
-	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
-	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	sudo pacman -S --needed\
 		adapta-gtk-theme\
 		base-devel\
@@ -89,6 +83,12 @@ install: all
 	git config --global user.email "trenthekman68@gmail.com"
 	git config --global user.name "Trent008"
 	git config --global pull.rebase false
+	mkdir -p ${DESTDIR}${PREFIX}/bin
+	cp -f dwm ${DESTDIR}${PREFIX}/bin
+	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm
+	mkdir -p ${DESTDIR}${MANPREFIX}/man1
+	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
+	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
