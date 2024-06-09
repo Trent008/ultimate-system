@@ -75,10 +75,12 @@ install: all
 	mkdir -p\
 		${HOMEPREFIX}/.config/gtk-3.0\
 		${HOMEPREFIX}/.config/rofi\
+		${HOMEPREFIX}/.config/terminator\
 		${HOMEPREFIX}/.icons\
 		${HOMEPREFIX}/.icons/default
 	cp Config/.xinitrc ${HOMEPREFIX}
 	cp Config/config.rasi ${HOMEPREFIX}/.config/rofi
+	cp Config/config ${HOMEPREFIX}/.config/terminator
 	cp Config/settings.ini ${HOMEPREFIX}/.config/gtk-3.0
 	cp Config/index.theme ${HOMEPREFIX}/.icons/default
 	cp Config/.Xresources ${HOMEPREFIX}/
