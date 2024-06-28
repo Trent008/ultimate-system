@@ -36,6 +36,8 @@ install: all
 .c.o:
 	sudo pacman -S --needed\
 		adapta-gtk-theme\
+		alsa-utils\
+		arandr\
 		base-devel\
 		blueberry\
 		brightnessctl\
