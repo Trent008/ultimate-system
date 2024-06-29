@@ -108,7 +108,6 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "terminator", NULL };
-static const char *spotifycmd[]= { "spotify-launcher", NULL };
 static const char *codecmd[]= { "code", NULL };
 static const char *autostart[]= { "./ultimate-system/Config/autostart.sh", NULL };
 static const Arg autostartarg= {.v = autostart };
@@ -117,12 +116,12 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_t,      spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_s,      spawn,          {.v = spotifycmd } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = codecmd } },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD ("firefox")},
 	{ MODKEY,                       XK_z,      spawn,          SHCMD ("blueberry")},
+	{ MODKEY,                       XK_p,      spawn,          SHCMD ("pavucontrol")},
 	{ MODKEY,                       XK_e,      spawn,          SHCMD ("thunar")},
-	{ MODKEY,                       XK_p,      spawn,          SHCMD ("shotgun -s")},
+	{ MODKEY,                       0xfd1d,    spawn,          SHCMD ("shotgun -s")},
 	{ MODKEY,                       XK_x,      spawn,          SHCMD ("./ultimate-system/Config/monitor.sh")},
 	{ 0,                            0x1008ff02, spawn,         SHCMD ("brightnessctl set +2%")},
 	{ 0,                            0x1008ff03, spawn,         SHCMD ("brightnessctl set 2%-")},
