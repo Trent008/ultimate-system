@@ -57,6 +57,7 @@ install: all
 		rclone\
 		rofi\
 		shotgun\
+		spotify-launcher\
 		terminator\
 		thunar\
 		ttf-nerd-fonts-symbols-mono\

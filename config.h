@@ -64,6 +64,7 @@ static const char *tags[] = {
 	"󰖟", // browser
 	"", // general
 	"", // code
+	"󰝚", // spotify
 };
 
 static const Rule rules[] = {
@@ -76,6 +77,7 @@ static const Rule rules[] = {
 	{ "firefox",      NULL,     NULL,      1 << 1,         0,           -1 },
 	{ "Thunar",       NULL,     NULL,      1 << 2,         0,           -1 },
 	{ "code-oss",     NULL,     NULL,      1 << 3,         0,           -1 },
+	{ "Spotify",      NULL,     NULL,      1 << 4,         0,            0 },
 };
 
 /* layout(s) */
@@ -106,6 +108,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "terminator", NULL };
+static const char *spotifycmd[]= { "spotify-launcher", NULL };
 static const char *codecmd[]= { "code", NULL };
 static const char *autostart[]= { "./ultimate-system/Config/autostart.sh", NULL };
 static const Arg autostartarg= {.v = autostart };
@@ -114,6 +117,7 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_t,      spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = spotifycmd } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = codecmd } },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD ("firefox")},
 	{ MODKEY,                       XK_z,      spawn,          SHCMD ("blueberry")},
