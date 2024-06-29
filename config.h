@@ -118,6 +118,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_b,      spawn,          SHCMD ("firefox")},
 	{ MODKEY,                       XK_z,      spawn,          SHCMD ("blueberry")},
 	{ MODKEY,                       XK_p,      spawn,          SHCMD ("pavucontrol")},
+	{ MODKEY,                       XK_a,      spawn,          SHCMD ("arandr")},
 	{ MODKEY,                       XK_e,      spawn,          SHCMD ("thunar")},
 	{ MODKEY,                       0xfd1d,    spawn,          SHCMD ("shotgun -s")},
 	{ MODKEY,                       XK_x,      spawn,          SHCMD ("./ultimate-system/Config/monitor.sh")},
