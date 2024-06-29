@@ -35,10 +35,10 @@ install: all
 
 .c.o:
 	sudo pacman -S --needed\
-		adapta-gtk-theme\
 		arandr\
 		base-devel\
 		blueberry\
+		breeze-gtk\
 		brightnessctl\
 		code\
 		dunst\
