@@ -83,9 +83,6 @@ install: all
 	cp Config/.Xresources ${HOMEPREFIX}/
 	cp Config/.gtkrc-2.0 ${HOMEPREFIX}/
 	cp Config/settings.ini /etc/gtk-3.0
-	git config --global user.email "trenthekman68@gmail.com"
-	git config --global user.name "Trent008"
-	git config --global pull.rebase false
 	${CC} -c ${CFLAGS} $<
 
 ${OBJ}: config.h config.mk
