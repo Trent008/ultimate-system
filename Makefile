@@ -52,6 +52,7 @@ install: all
 		neofetch\
 		obs-studio\
 		papirus-icon-theme\
+		pavucontrol\
 		picom\
 		playerctl\
 		rclone\
