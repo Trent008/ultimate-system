@@ -5,7 +5,7 @@
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Symbols Nerd Font Mono:size=10","Cantarell:size=16" };
 static const char teal0[]       = "#030808";
 static const char teal1[]       = "#081616";
@@ -121,7 +121,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_c,      spawn,          {.v = codecmd } },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD ("firefox")},
 	{ MODKEY,                       XK_z,      spawn,          SHCMD ("blueberry")},
-	{ MODKEY,                       XK_p,      spawn,          SHCMD ("pavucontrol")},
 	{ MODKEY,                       XK_a,      spawn,          SHCMD ("arandr")},
 	{ MODKEY,                       XK_e,      spawn,          SHCMD ("thunar")},
 	{ MODKEY,                       0xfd1d,    spawn,          SHCMD ("shotgun -s")},
@@ -134,6 +133,7 @@ static const Key keys[] = {
 	{ 0,                            0x1008FF14, spawn,         SHCMD ("playerctl play-pause")},
 	{ 0,                            0x1008FF16, spawn,         SHCMD ("playerctl previous")},
 	{ 0,                            0x1008FF17, spawn,         SHCMD ("playerctl next")},
+	{ MODKEY,                       XK_v,      spawn,          SHCMD ("qemu-system-x86_64 -m 12G -cdrom vm-install.iso -cpu host -smp $(nproc) -boot order=d -drive file=vm,format=raw -accel kvm")},
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
