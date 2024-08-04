@@ -34,7 +34,6 @@ install: all
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
 
 .c.o:
-	cp Config/.xinitrc ${HOMEPREFIX}
 	${CC} -c ${CFLAGS} $<
 
 ${OBJ}: config.h config.mk
