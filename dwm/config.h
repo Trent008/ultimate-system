@@ -7,55 +7,38 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Symbols Nerd Font Mono:size=10","Cantarell:size=16" };
-static const char teal0[]       = "#030808";
-static const char teal1[]       = "#081616";
-static const char teal2[]       = "#0d2525";
-static const char teal3[]       = "#123333";
-static const char teal4[]       = "#174141";
-static const char teal5[]       = "#1c5050";
-static const char teal6[]       = "#215e5e";
-static const char teal7[]       = "#266d6d";
-static const char teal8[]       = "#2c7b7b";
-static const char teal9[]      = "#318a8a";
-static const char teal10[]      = "#369898";
-static const char teal11[]      = "#3ba7a7";
-static const char teal12[]      = "#40b5b5";
-static const char teal13[]      = "#4abfbf";
-static const char teal14[]      = "#59c4c4";
-static const char teal15[]      = "#67c9c9";
-static const char teal16[]      = "#76cece";
-static const char teal17[]      = "#84d4d4";
-static const char teal18[]      = "#93d9d9";
-static const char teal19[]      = "#a1dede";
-static const char teal20[]      = "#b0e3e3";
-static const char teal21[]      = "#bee8e8";
-static const char teal22[]      = "#cdeded";
-static const char teal23[]      = "#dbf2f2";
-static const char teal24[]      = "#eaf7f7";
-static const char teal25[]      = "#f8fdfd";
-static const char border_sel[]  = "#123323";
-static const char border_norm[] = "#122333";
+static const char grn1[]       = "#010101";
+static const char grn2[]       = "#1a241a";
+static const char grn3[]       = "#435743";
+static const char grn4[]       = "#709070";
+static const char grn5[]       = "#99b099";
+static const char grn6[]       = "#c4d1c4";
+static const char grn7[]       = "#f0f3f0";
+static const char box_sel[]    = "#516a51";
+static const char box_norm[]   = "#354535";
+static const char border_sel[]  = "#908070";
+static const char border_norm[] = "#708090";
 static const char *colors[][3]      = {
 	/*                      forground   background  border   */
-	[SchemeIconBoxNorm] = { teal4,  NULL,  NULL },
-	[SchemeIconBoxSel]  = { teal6,  NULL,  NULL },
-	[SchemeIconBoxUrg]  = { teal4,  NULL,  NULL },
+	[SchemeIconBoxNorm] = { grn3,  NULL,  NULL },
+	[SchemeIconBoxSel]  = { grn4,  NULL,  NULL },
+	[SchemeIconBoxUrg]  = { grn3,  NULL,  NULL },
 
-	[SchemeIconNorm] = { teal20, NULL, NULL },
-	[SchemeIconSel]  = { teal22, NULL, NULL },
-	[SchemeIconUrg]  = { teal18,  NULL, NULL },
+	[SchemeIconNorm] = { grn6, NULL, NULL },
+	[SchemeIconSel]  = { grn7, NULL, NULL },
+	[SchemeIconUrg]  = { grn6,  NULL, NULL },
 
-	[SchemeLayoutNorm] = { teal10, NULL, NULL },
-	[SchemeLayoutSel]  = { teal10, NULL, NULL },
+	[SchemeLayoutNorm] = { grn6, NULL, NULL },
+	[SchemeLayoutSel]  = { grn5, NULL, NULL },
 
-	[SchemeClientNorm] = { teal20, NULL, border_norm },
-	[SchemeClientSel]  = { teal22, NULL, border_sel },
+	[SchemeClientNorm] = { grn5, NULL, border_norm },
+	[SchemeClientSel]  = { grn7, NULL, border_sel },
 
-	[SchemeStatusNorm] = { teal20, NULL, NULL },
-	[SchemeStatusSel]  = { teal22, NULL, NULL },
+	[SchemeStatusNorm] = { grn5, NULL, NULL },
+	[SchemeStatusSel]  = { grn7, NULL, NULL },
 
-	[SchemeBarNorm]  = { teal2, NULL, NULL },
-	[SchemeBarSel]  =  { teal3, NULL, NULL },
+	[SchemeBarNorm]  = { grn2, NULL, NULL },
+	[SchemeBarSel]  =  { grn2, NULL, NULL },
 };
 
 /* tagging */
@@ -120,11 +103,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_s,      spawn,          {.v = spotifycmd } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = codecmd } },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD ("firefox")},
-	{ MODKEY,                       XK_z,      spawn,          SHCMD ("blueberry")},
 	{ MODKEY,                       XK_a,      spawn,          SHCMD ("arandr")},
 	{ MODKEY,                       XK_e,      spawn,          SHCMD ("thunar")},
 	{ MODKEY,                       0xfd1d,    spawn,          SHCMD ("shotgun -s")},
-	{ MODKEY,                       XK_x,      spawn,          SHCMD ("./ultimate-system/Config/monitor.sh")},
+	{ MODKEY,                       XK_x,      spawn,          SHCMD ("~/.screenlayout/apply-layout.sh")},
 	{ 0,                            0x1008ff02, spawn,         SHCMD ("brightnessctl set +2%")},
 	{ 0,                            0x1008ff03, spawn,         SHCMD ("brightnessctl set 2%-")},
 	{ 0,                            0x1008ff11, spawn,         SHCMD ("pactl set-sink-volume 0 -2%")},

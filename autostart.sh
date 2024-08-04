@@ -1,4 +1,4 @@
 # add items to autostart here
-./ultimate-system/Config/monitor.sh &
+~/.screenlayout/apply-layout.sh
 dunst &
 picom

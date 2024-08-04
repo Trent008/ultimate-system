@@ -34,56 +34,7 @@ install: all
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
 
 .c.o:
-	sudo pacman -S --needed\
-		arandr\
-		base-devel\
-		blueberry\
-		breeze-gtk\
-		brightnessctl\
-		code\
-		dunst\
-		feh\
-		firefox\
-		htop\
-		inkscape\
-		libxft\
-		libxinerama\
-		nano\
-		neofetch\
-		obs-studio\
-		papirus-icon-theme\
-		picom\
-		playerctl\
-		rclone\
-		rofi\
-		shotgun\
-		spotify-launcher\
-		terminator\
-		thunar\
-		ttf-nerd-fonts-symbols-mono\
-		unzip\
-		vlc\
-		xarchiver\
-		xorg-server\
-		xorg-xinit\
-		xorg-xrandr\
-		xorg-xsetroot
-	systemctl enable --now bluetooth.service
-	systemctl enable --now NetworkManager.service
-	mkdir -p\
-		${HOMEPREFIX}/.config/gtk-3.0\
-		${HOMEPREFIX}/.config/rofi\
-		${HOMEPREFIX}/.config/terminator\
-		${HOMEPREFIX}/.icons\
-		${HOMEPREFIX}/.icons/default
 	cp Config/.xinitrc ${HOMEPREFIX}
-	cp Config/config.rasi ${HOMEPREFIX}/.config/rofi
-	cp Config/config ${HOMEPREFIX}/.config/terminator
-	cp Config/settings.ini ${HOMEPREFIX}/.config/gtk-3.0
-	cp Config/index.theme ${HOMEPREFIX}/.icons/default
-	cp Config/.Xresources ${HOMEPREFIX}/
-	cp Config/.gtkrc-2.0 ${HOMEPREFIX}/
-	cp Config/settings.ini /etc/gtk-3.0
 	${CC} -c ${CFLAGS} $<
 
 ${OBJ}: config.h config.mk
