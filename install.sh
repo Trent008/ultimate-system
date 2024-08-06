@@ -48,4 +48,4 @@ sudo systemctl enable --now NetworkManager.service
 git config --global user.email "trenthekman68@gmail.com"
 git config --global user.name "Trent008"
 git config --global pull.rebase false
-./configure.sh
+~/ultimate-system/configure.sh
