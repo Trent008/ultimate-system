@@ -7,38 +7,38 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Symbols Nerd Font Mono:size=10","Cantarell:size=16" };
-static const char grn1[]       = "#010101";
-static const char grn2[]       = "#1a241a";
-static const char grn3[]       = "#435743";
-static const char grn4[]       = "#709070";
-static const char grn5[]       = "#99b099";
-static const char grn6[]       = "#c4d1c4";
-static const char grn7[]       = "#f0f3f0";
-static const char box_sel[]    = "#516a51";
-static const char box_norm[]   = "#354535";
+static const char grey1[]       = "#010101";
+static const char grey2[]       = "#1f1f1f";
+static const char grey3[]       = "#4d4d4d";
+static const char grey4[]       = "#808080";
+static const char grey5[]       = "#a4a4a4";
+static const char grey6[]       = "#cacaca";
+static const char grey7[]       = "#f2f2f2";
+static const char box_sel[]    = "#5d5d5d";
+static const char box_norm[]   = "#3d3d3d";
 static const char border_sel[]  = "#908070";
 static const char border_norm[] = "#708090";
 static const char *colors[][3]      = {
 	/*                      forground   background  border   */
-	[SchemeIconBoxNorm] = { grn3,  NULL,  NULL },
-	[SchemeIconBoxSel]  = { grn4,  NULL,  NULL },
-	[SchemeIconBoxUrg]  = { grn3,  NULL,  NULL },
+	[SchemeIconBoxNorm] = { grey3,  NULL,  NULL },
+	[SchemeIconBoxSel]  = { grey4,  NULL,  NULL },
+	[SchemeIconBoxUrg]  = { grey3,  NULL,  NULL },
 
-	[SchemeIconNorm] = { grn6, NULL, NULL },
-	[SchemeIconSel]  = { grn7, NULL, NULL },
-	[SchemeIconUrg]  = { grn6,  NULL, NULL },
+	[SchemeIconNorm] = { grey6, NULL, NULL },
+	[SchemeIconSel]  = { grey7, NULL, NULL },
+	[SchemeIconUrg]  = { grey6,  NULL, NULL },
 
-	[SchemeLayoutNorm] = { grn6, NULL, NULL },
-	[SchemeLayoutSel]  = { grn5, NULL, NULL },
+	[SchemeLayoutNorm] = { grey6, NULL, NULL },
+	[SchemeLayoutSel]  = { grey5, NULL, NULL },
 
-	[SchemeClientNorm] = { grn5, NULL, border_norm },
-	[SchemeClientSel]  = { grn7, NULL, border_sel },
+	[SchemeClientNorm] = { grey5, NULL, border_norm },
+	[SchemeClientSel]  = { grey7, NULL, border_sel },
 
-	[SchemeStatusNorm] = { grn5, NULL, NULL },
-	[SchemeStatusSel]  = { grn7, NULL, NULL },
+	[SchemeStatusNorm] = { grey5, NULL, NULL },
+	[SchemeStatusSel]  = { grey7, NULL, NULL },
 
-	[SchemeBarNorm]  = { grn2, NULL, NULL },
-	[SchemeBarSel]  =  { grn2, NULL, NULL },
+	[SchemeBarNorm]  = { grey2, NULL, NULL },
+	[SchemeBarSel]  =  { grey2, NULL, NULL },
 };
 
 /* tagging */

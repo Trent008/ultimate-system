@@ -13,6 +13,7 @@ yay -S --needed\
     dunst\
     feh\
     firefox\
+    gvfs\
     htop\
     inkscape\
     libxft\
@@ -31,6 +32,7 @@ yay -S --needed\
     terminator\
     thunar\
     ttf-nerd-fonts-symbols-mono\
+    tumbler\
     unzip\
     usbimager\
     vlc\

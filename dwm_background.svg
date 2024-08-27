@@ -27,11 +27,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="0.49182685"
-     inkscape:cx="6984.1653"
-     inkscape:cy="116.91106"
-     inkscape:window-width="1918"
-     inkscape:window-height="1049"
+     inkscape:zoom="0.24591343"
+     inkscape:cx="6240.0009"
+     inkscape:cy="943.42145"
+     inkscape:window-width="1406"
+     inkscape:window-height="1410"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -56,7 +56,7 @@
   <defs
      id="defs1" />
   <rect
-     style="fill:#001200;fill-opacity:1"
+     style="fill:#0d0d0d;fill-opacity:1"
      id="rect1"
      width="7680"
      height="4320"
@@ -64,7 +64,7 @@
      y="0" />
   <text
      xml:space="preserve"
-     style="font-size:96px;fill:#416641;fill-opacity:1;-inkscape-font-specification:Sans;font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     style="font-size:96px;fill:#545454;fill-opacity:1;-inkscape-font-specification:Sans;font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
      x="6476.4341"
      y="145.57455"
      id="text1"><tspan
